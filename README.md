@@ -60,7 +60,7 @@ declare GUEST_UNMT=$(which guestunmount)
 
   # set the root password on the image
   sudo $VIRT_CT -a "$LIBVIRT_BASE_DIRECTORY/$LIBVIRT_BASE_UBUNTU_QCOW2" \
-  --root-password password:rack1234
+  --root-password password:0
 
   sleep 2
   # enable multi-user target on the base image
